@@ -100,9 +100,25 @@ tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr > result.txt
 ```
 
 ## Tips and Tricks
-Bash Shell
+
+### Bash Shell (General Tips)
 - <i>Up-Arrow</i>: Replaces current text with previous command that was submitted
+- <i>CTRL + SHIFT + C</i>: Copy in Bash
 - ``` -n: ``` Numeric
 - ``` -r: ``` Reverse
 - Single Letter Flag (i.e. ``` -r ```): Only <b>1</b> dash
 - Multiple Letter Flag (i.e. ``` -rn ```): Only <b>1</b> dash
+<br></br>
+
+### Bash Shell (Important Commands) 
+
+- ``` >: ``` Redirects content from directory to file
+<br><sub>Note: If there is a file in the same directory, that file will be overwritten.<sub>
+<br>
+
+- ``` >>: ``` Redirects and Appends the conent from the directory to the end of the file
+- ``` ls: ``` Lists the contents in the default directory
+    - Use ``` ls > temp.txt ``` to save the results to a seperate file 
+- ``` cat: ```  Display contents of temp.txt in prompt window
+
+

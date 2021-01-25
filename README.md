@@ -1,4 +1,4 @@
-# Shell Data Processing
+# <center>Shell Data Processing</center>
 
 ## Overview
 For week two, we are tasked to do shell data processing. To get acclimated with PowerShell, we used it to create the repository and two different files (.gitignore & README.md).
@@ -7,35 +7,35 @@ To create these files, first, we have to select the <i>'Run Powershell Window he
 
 Next, to create our repository, we enter the following code into PowerShell:
 
-```Powershell
+```PowerShell
 > mkdir shell-data-processing
 ```
 
 This will create a new folder within your main folder. From here you can use the following code to enter the file and began manipulating the repository:
 
-```Powershell
+```PowerShell
 > cd shell-data-processing
 ```
 
 Within this folder, we can then use the ```ni``` command to create the README.md and .gitignore files:
 
-```Powershell
+```PowerShell
 > ni README.md
 > ni .gitignore
 ```
 
 To verify that the files we just created are completed successfully, we can use the follwing code that makes a list of all current files:
 
-```Powershell
-ls 
+```PowerShell
+> ls 
 ```
 
 Although short, this command will give you a brief list of all files in the directory.
 
 Then, we can enter VS Code directly from PowerShell to begin editing files:
 
-```Powershell
-code .
+```PowerShell
+> code .
 ```
 
 ## List of Commands
@@ -57,7 +57,7 @@ Moving on to data processing, I found an article on cnet.com that discusses the 
 Within PowerShell, we can run the ``` curl ``` command to grab the source of the URL and output the text to a specified file:
 
 ```PowerShell
-curl "https://www.cnet.com/personal-finance/when-will-the-next-stimulus-check-come-these-are-two-possible-timelines-right-now/" -O "data.txt"
+> curl "https://www.cnet.com/personal-finance/when-will-the-next-stimulus-check-come-these-are-two-possible-timelines-right-now/" -O "data.txt"
 ```
 <sub>Note: The URL can be replaced with any other article. The code should still work the same.</sub>
 
@@ -104,21 +104,21 @@ tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr > result.txt
 ### Bash Shell (General Tips)
 - <i>Up-Arrow</i>: Replaces current text with previous command that was submitted
 - <i>CTRL + SHIFT + C</i>: Copy in Bash
-- ``` -n: ``` Numeric
-- ``` -r: ``` Reverse
+- ``` -n ```: Numeric
+- ``` -r ```: Reverse
 - Single Letter Flag (i.e. ``` -r ```): Only <b>1</b> dash
 - Multiple Letter Flag (i.e. ``` -rn ```): Only <b>1</b> dash
 <br></br>
 
 ### Bash Shell (Important Commands) 
 
-- ``` >: ``` Redirects content from directory to file
+- ``` > ```: Redirects content from directory to file
 <br><sub>Note: If there is a file in the same directory, that file will be overwritten.<sub>
 <br>
 
-- ``` >>: ``` Redirects and Appends the conent from the directory to the end of the file
-- ``` ls: ``` Lists the contents in the default directory
+- ``` >> ```: Redirects and Appends the conent from the directory to the end of the file
+- ``` ls ```: Lists the contents in the default directory
     - Use ``` ls > temp.txt ``` to save the results to a seperate file 
-- ``` cat: ```  Display contents of temp.txt in prompt window
+- ``` cat ```:  Display contents of temp.txt in prompt window
 
 
